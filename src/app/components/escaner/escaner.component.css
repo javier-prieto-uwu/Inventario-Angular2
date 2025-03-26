@@ -1,0 +1,81 @@
+/* Estilo para el contenedor principal */
+.scanner-container {
+  background-color: rgb(20, 20, 20);
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+/* Estilo para el área del escáner */
+.scanner-wrapper {
+  margin: 20px auto;
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  border: 2px solid #D7FC70;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #000;
+}
+
+/* Controles del escáner */
+.controls {
+  margin: 25px 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Estilo para los botones */
+button {
+  padding: 10px 25px;
+  background-color: #D7FC70;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  max-width: 150px;
+}
+
+/* Efecto hover para los botones */
+button:hover {
+  background-color: #A6E14F;
+}
+
+/* Estilo para los botones deshabilitados */
+button:disabled {
+  background-color: #9e9e9e;
+  cursor: not-allowed;
+}
+
+/* Estilo para el resultado */
+.result {
+  margin: 25px auto;
+  padding: 15px;
+  background-color: #1f1f1f;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para el título de los resultados */
+.result h3 {
+  color: #D7FC70;
+  margin-top: 0;
+  text-align: center;
+}
+
+/* Estilo para el texto del resultado */
+.result p {
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+}

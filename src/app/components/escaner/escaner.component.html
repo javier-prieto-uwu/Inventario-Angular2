@@ -1,0 +1,32 @@
+<div class="scanner-container">
+  <h1>Lector de Códigos de Barras/QR</h1>
+
+  <!-- Componente del escáner con propiedades corregidas -->
+  <div *ngIf="scannerEnabled">
+    <div class="scanner-wrapper">
+      <zxing-scanner
+        [enable]="scannerEnabled"
+        [formats]="allowedFormats"
+        (scanSuccess)="onScanSuccess($event)"
+        [autofocusEnabled]="true"
+        [tryHarder]="true">
+      </zxing-scanner>
+    </div>
+  </div>
+
+  <!-- Controles del escáner -->
+  <div class="controls">
+    <button (click)="startScanner()" [disabled]="scannerEnabled">
+      Activar Escáner
+    </button>
+    <button (click)="stopScanner()" [disabled]="!scannerEnabled">
+      Desactivar
+    </button>
+  </div>
+
+  <!-- Resultados -->
+  <div *ngIf="scanResult" class="result">
+    <h3>Código detectado:</h3>
+    <p>{{ scanResult }}</p>
+  </div>
+</div>

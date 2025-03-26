@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GeneadorCodgioComponent } from './geneador-codgio.component';
+import { GeneradorComponent } from './generador.component';
 
-describe('GeneadorCodgioComponent', () => {
-  let component: GeneadorCodgioComponent;
-  let fixture: ComponentFixture<GeneadorCodgioComponent>;
+describe('GeneradorComponent', () => {
+  let component: GeneradorComponent;
+  let fixture: ComponentFixture<GeneradorComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [GeneadorCodgioComponent]
+      imports: [GeneradorComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(GeneadorCodgioComponent);
+    fixture = TestBed.createComponent(GeneradorComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

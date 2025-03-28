@@ -1,0 +1,35 @@
+/* Contenedor del navbar */
+.navbar {
+    background-color: #1f1f1f;
+    padding: 15px 20px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Lista de elementos */
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+  }
+  
+  /* Estilo para cada elemento del menú */
+  .navbar li {
+    font-size: 18px;
+    color: #D7FC70;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Efecto hover y cuando el enlace está activo */
+  .navbar li:hover,
+  .navbar li.active {
+    color: #A6E14F;
+    transform: scale(1.05);
+    font-weight: bold;
+  }
+  

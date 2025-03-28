@@ -1,8 +1,8 @@
 import { Routes } from '@angular/router';
 import { EscanerComponent } from './components/escaner/escaner.component';
 import { InicioSesionComponent } from './components/inicio-sesion/inicio-sesion.component';
-import { InventarioComponent } from './components/inventario/inventario.component';
 import {GeneradorComponent} from './components/generador/generador.component'
+import {InventarioComponent} from './components/inventario/inventario.component'
 
 
 export const routes: Routes = [

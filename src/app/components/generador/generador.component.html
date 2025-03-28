@@ -1,4 +1,4 @@
-<!-- generador.component.html -->
+<app-navbar></app-navbar>
 <div class="generator-container">
   <h2 class="title">Generador de Códigos de Barras</h2>
   
@@ -45,5 +45,22 @@
     <button class="download-btn" (click)="downloadBarcode()" [disabled]="!barcodeValue || !validateBarcode()">
       Descargar Código de Barras
     </button>
+  </div>
+
+  <!-- Sección para agregar el producto al inventario -->
+  <div class="add-product-section">
+    <h3>Agregar producto al inventario</h3>
+    <label>Código: {{ newProduct.id }}</label>
+    <br>
+    <label>Nombre:</label>
+    <input [(ngModel)]="newProduct.name" placeholder="Nombre">
+    <br>
+    <label>Precio:</label>
+    <input type="number" [(ngModel)]="newProduct.price" placeholder="Precio">
+    <br>
+    <label>Cantidad:</label>
+    <input type="number" [(ngModel)]="newProduct.quantity" placeholder="Cantidad">
+    <br>
+    <button (click)="addProduct()">Agregar al Inventario</button>
   </div>
 </div>

@@ -31,12 +31,15 @@
     "angular-barcode": "^2.0.1",
     "bootstrap": "^5.3.3",
     "jsbarcode": "^3.11.6",
+    "jspdf": "^3.0.1",
+    "jspdf-autotable": "^5.0.2",
     "jsqr": "^1.4.0",
     "ngx-barcode-scanner": "^14.0.1",
     "ngx-barcode6": "^1.0.26",
     "ngx-scanner-qrcode": "^1.7.6",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
+    "xlsx": "^0.18.5",
     "zone.js": "~0.15.0"
   },
   "devDependencies": {
